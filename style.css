@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    font-family:Arial, sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:900px;
+    background:#1e293b;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 0 20px rgba(0,0,0,0.4);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+    color:#38bdf8;
+}
+
+.menu{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.section{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+label{
+    margin-bottom:5px;
+}
+
+select{
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+}
+
+button{
+    background:#38bdf8;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0ea5e9;
+}
+
+#game{
+    text-align:center;
+}
+
+#info{
+    margin-bottom:20px;
+}
+
+#word{
+    font-size:2rem;
+    letter-spacing:10px;
+    margin:20px 0;
+    word-wrap:break-word;
+}
+
+#lives{
+    font-size:1.2rem;
+    color:#4ade80;
+    margin-bottom:10px;
+}
+
+#hint{
+    color:#facc15;
+    margin-bottom:10px;
+    min-height:30px;
+}
+
+#guessed{
+    margin-bottom:20px;
+    color:#cbd5e1;
+}
+
+.guessArea{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+}
+
+#guessInput{
+    width:70px;
+    padding:12px;
+    font-size:20px;
+    text-align:center;
+    border:none;
+    border-radius:10px;
+}
+
+#message{
+    min-height:40px;
+    font-size:1.4rem;
+    font-weight:bold;
+}
+
+#stats{
+    margin-top:30px;
+    text-align:center;
+    background:#334155;
+    padding:20px;
+    border-radius:15px;
+}
+
+#stats h2{
+    margin-bottom:15px;
+}
+
+#stats p{
+    margin:5px 0;
+}
+
+@media(max-width:600px){
+
+    #word{
+        font-size:1.3rem;
+        letter-spacing:5px;
+    }
+
+    button{
+        width:100%;
+    }
+
+    select{
+        width:100%;
+    }
+
+    .menu{
+        flex-direction:column;
+    }
+
+    .guessArea{
+        flex-direction:column;
+        align-items:center;
+    }
+}
